@@ -1,7 +1,5 @@
 <?php
 
-  //this page was referenced by class example
-
   //create user
   function createUser($fname, $lname, $username, $password, $email, $verify) {
     include('connect.php');
