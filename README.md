@@ -6,5 +6,5 @@ Video App with a Content Management System to add a movie, update, delete, and w
 # Project Files &amp; Properties #
 
 - Back-end video app using vanilla PHP and mySQL
-- Has it's own Content Management System (CMS) to allow users once they have registeres and logged in to update, add, detele, and write reviews on selected movies within the app. 
+- Has it's own Content Management System (CMS) to allow users once they have registered and logged in to update, add, detele, and write reviews on selected movies within the app. 
 - The deisgn of this app is very basic but the main focus for the creation of this app was the functionality
