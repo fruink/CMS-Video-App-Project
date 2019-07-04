@@ -1,6 +1,5 @@
 <?php
 
-    //this page was referenced by class example and researched from web with some help when needed
 
     //movie genres from tbl_genre
     function getGenres(){
