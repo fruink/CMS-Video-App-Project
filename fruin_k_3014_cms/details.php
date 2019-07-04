@@ -1,7 +1,5 @@
 <?php
 
-    //this page was referenced by class example but mainly researched from web and got help
-
     require_once('admin/phpscripts/config.php');
 
     if(isset($_GET['id'])){
@@ -20,7 +18,7 @@
     $genres= get_genres_movie($id);
     //fetch movie reviews
     $reviews = get_reviews($id);
-    //fetch users ratings, only works when inerted from db not on the site
+    //fetch users ratings, only works when inserted from db not on the site
     $uratings = get_user_ratings($id);//haven't figured it out yet...
     $overallScore = 0; //score depends on insert from db or what user(s) score
     $users_rating = 0; //rating depends on insert of db or what user(s) rate
