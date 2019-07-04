@@ -1,0 +1,440 @@
+/*css styling for movie review site*/
+
+/*General stlying for site*/
+body{
+    margin: auto 0;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(#1d1c1c, #000);
+}
+
+.hidden{
+  display:none;
+}
+
+
+/*header bar*/
+.topBar{
+    width:100%;
+    height:50px;
+    padding-top:20px;
+    margin-top: 13px;
+    text-align: center;
+}
+
+.topBar a{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size:1em;
+    float: right;
+    margin-right: 10%;
+    font-family: 'Arial', sans-serif;
+}
+
+.topBar a:hover{
+  color: red;
+  text-decoration: none;
+}
+
+.thumb{
+    width:10%;
+    margin-left:2.5%;
+    margin-right:2.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+/*movies rotate 15 degrees sideways when hovered over*/
+.thumb:hover{
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.genre_row{
+    width:90%;
+    margin-left: 5%;
+    align-items: center;
+    background: radial-gradient(#fff,#ed1010);
+}
+
+
+/*genre titles*/
+.titleG{
+    font-size:2em;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.titleG:hover{
+    font-size:2em;
+    font-weight: 300;
+    color: #ed1010;
+    text-decoration: underline;
+    margin-left: 5%;
+}
+
+/*users review rate box, user will be able to enter their own personal review of the selected movie when they login into the site (refer back to admin_update.php for option)*/
+.form{
+  color: #fff;
+  width: 92%;
+  padding-bottom: 20px;
+  float:right;
+  margin-right: 5%;
+  margin-top: 2%;
+  text-align: inherit;
+}
+
+.form input{
+  width: 92%;
+  height: 40px;
+  margin-left: 5%;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: bold;
+  background-color: red;
+}
+
+.form input:hover{
+  color: #000;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+
+#review_input{
+    width: 100%;
+    border: solid #302c2c;
+    margin-right: 45%;
+    height: 200px;
+}
+
+.review_tit{
+  font-size: 2em;
+  margin-right:45%;
+}
+
+
+#video{
+  margin-top: 5%;
+  width: 75%;
+  height: auto;
+  background-color: #302f2f;
+  float: right;
+  margin-right: 13%;
+}
+
+#movie_info{
+  width: 80%;
+  height: auto;
+  text-align: left;
+  margin-left: 10%;
+  font-family: 'Arial', sans-serif;
+  padding:5px 5px 5px 5px;
+  color:white;
+  font-weight: bold;
+  border-radius:20px;
+  float:left;
+}
+
+#movie_info p{
+  width: 80%;
+  margin-left: 3%;
+}
+
+#title{
+  margin-left:3%;
+  font-size:2em;
+  margin-bottom: 3%;
+  color: red;
+}
+
+.details{
+  margin-left:2%;
+  margin-right:2%
+}
+
+#urating{
+  font-size: 1em;
+  font-style: italic;
+  color: yellow;
+}
+
+.review_post{
+  margin-top: 10%;
+  color: #fff;
+  font-size: 1em;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+#runtime{
+  font-size:1em;
+  font-style: italic;
+}
+
+#year{
+  font-size:1em;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+/*movie cover*/
+#cover{
+  margin-top: 30px;
+}
+
+#desc{
+  margin-top: 5%;
+  font-size:1em;
+  margin-left: 60px;
+  font-weight: lighter;
+  font-kerning: normal;
+}
+
+.genre{
+  display:inline;
+  font-size:1em;
+}
+
+
+#reviews{
+  width: 80%;
+  color: #fff;
+  float: left;
+}
+
+#back{
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+  font-size:1.5em;
+  text-align: center;
+  margin-left: 12%;
+  float:left;
+  clear: both;
+  text-decoration: underline;
+}
+
+/*login styling*/
+.login_account{
+  color: #fff;
+  font-size:2em;
+  text-align: center;
+}
+
+.login_account:hover{
+  color: red;
+}
+
+/*create user page*/
+.input{
+  width: 22%;
+  height: 25px;
+  border: solid #eee;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+.label{
+  color: #fff;
+  font-size:1.3em;
+  margin-left:30%;
+  font-weight: 400;
+}
+
+#login_btn{
+  width:15%;
+  height:33px;
+  margin-left:43%;
+  align-items: center;
+  background-color: red;
+  color: #fff;
+}
+
+/*admin edit content page (admin_index.php)*/
+.edit_content{
+  float: left;
+  width: 55%;
+  height: auto;
+  text-align: center;
+  margin-top: 25px;
+  background:rgba(0,0,0,0.9);
+  margin-left: 25%;
+  padding: 20px;
+}
+
+.edit_content a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-align: center;
+}
+
+.edit_content a:hover{
+  color: red;
+}
+
+/* edit or change a movie*/
+#update_form{
+  width: 80%;
+  margin-left: 7%;
+  background: rgba(0,0,0,0.9);
+  padding: 20px;
+}
+
+.update_label{
+  color: #fff;
+  font-size: 1.5em;
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.update_label:hover{
+  color: red;
+}
+
+.update_input{
+  width: 55%;
+  height: 25px;
+}
+
+#select_genre{
+  margin-left: 20%;
+  float: left;
+  margin-left: auto;
+}
+
+.review_edit{
+  background: rgba(0,0,0,0.9);
+  width:40%;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 33%;
+}
+
+#edit_btn{
+  width: 35%;
+  height: 10px;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  padding: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40%;
+}
+
+#edit_btn:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+/*add a new movie*/
+.add_mov{
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+}
+
+.add_mov:hover{
+  color: red;
+}
+
+.add_label{
+  color: #fff;
+  font-size: 1.3em;
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+.add_label:hover{
+  color: red;
+}
+
+.add_input{
+  width: 70%;
+  height: 25px;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+#add_form{
+  width: 70%;
+  margin-top: 5%;
+  margin-left: 13%;
+  background: rgba(0,0,0,0.9);
+  padding: 20px;
+}
+
+#add_btn{
+  margin-left: 23%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 32%;
+  height: 30px;
+  background-color: red;
+  color: #fff;
+}
+
+#add_btn:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+/*delete a movie*/
+.delete_title{
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 30px;
+}
+
+.delete_title:hover{
+  color: red;
+}
+
+.delete_movie{
+  float:left;
+  margin-left: 30px;
+  width: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 15px;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.delete_movie:hover{
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+.delete_movie img{
+  width: 95%;
+  margin-left: 22%;
+}
+
+.delete_movie a{
+  float: left;
+  margin-left: 13px;
+  color: #fff;
+  margin-left: 22%;
+  font-size: 0.89em;
+}
+
+.delete_movie a:hover{
+  text-align: center;
+  text-decoration: line-through red;
+  color: #eee;
+}
