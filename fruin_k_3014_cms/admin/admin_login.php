@@ -1,7 +1,5 @@
 <?php
 
-    //this page was referenced by class example and researched from web
-
     require_once('phpscripts/config.php');
 
 
